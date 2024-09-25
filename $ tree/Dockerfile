@@ -18,5 +18,5 @@ COPY . /bot
 # ポート開放 (uvicornで指定したポート)
 EXPOSE 8080
 
-# 実行
-CMD python app/main.py
+# FastAPIをuvicornで起動
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
