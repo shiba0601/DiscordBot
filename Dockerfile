@@ -1,8 +1,10 @@
 FROM python:3.11
 
-WORKDIR app
-COPY requirements.txt /app/
-EXPOSE 8080
+WORKDIR /app
 
-# 実行
-CMD python main.py
+COPY requirements.txt /app/
+RUN pip install -r requirements.txt
+
+COPY . /app
+
+CMD ["python", "main.py"]
