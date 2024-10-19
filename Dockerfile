@@ -5,4 +5,4 @@ COPY requirements.txt /app/
 EXPOSE 8080
 
 # 実行
-CMD python app/main.py
+CMD python main.py
