@@ -1,4 +1,4 @@
 discord.py==2.3.2
 python-dotenv==1.0.1
-unicorn==0.31.0
+uvicorn==0.31.0
 fastapi==0.115.0
